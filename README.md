@@ -3,7 +3,7 @@
 > **"If you need any help, feel free to reach out in this channel: https://t.me/Kernix_dev"**
 
 ---
-目前已支持高版本无视补丁！！！
+
 ​本项目是专为搭载骁龙 8sg4（Snapdragon 8 sGen4）平台的小米设备打造的 Windows 一键 BL 解锁辅助工具。通过 toUnlock.bat 脚本，实现 HyperOS 全补丁系统下的自动化解锁流程
 ---
 感谢来自 [@Littlenine](https://github.com/LittlenineEnnea) 的核心技术支持
