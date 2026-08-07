@@ -1,7 +1,7 @@
-# Mi8sG4-Unlocker 全自动版
+# Mi8sG4-Unlocker — Fully Automatic Edition
 
 <p align="center">
-  <b>面向 Snapdragon 8s Gen 4 小米设备的 Windows 一键 BL 解锁辅助工具</b>
+  <b>Windows one-click bootloader (BL) unlock assistant for Xiaomi devices with Snapdragon 8s Gen 4</b>
 </p>
 
 <p align="center">
@@ -16,97 +16,97 @@
 
 ---
 
-## 📌 项目简介
+## 📌 Project Overview
 
-**Mi8sG4-Unlocker** 是一款面向 **Snapdragon 8s Gen 4** 平台小米设备的 **Windows 全自动 BL 解锁辅助工具**。
+**Mi8sG4-Unlocker** is a **Windows fully-automatic bootloader (BL) unlock assistant** for Xiaomi devices based on the **Snapdragon 8s Gen 4** platform.
 
-本项目通过 `toUnlock.bat` 脚本提供自动化引导流程，集成 ADB / Fastboot 环境、机型适配资源、状态检测工具与调试入口，用于在 HyperOS 系统环境下完成 BL 解锁辅助操作。
+This project provides an automated workflow via the `toUnlock.bat` script. It bundles an ADB / Fastboot environment, device-specific resources, status-checking tools, and debug entry points to complete the BL unlock process under HyperOS.
 
-用户只需在 Windows 环境下完整解压工具包，连接设备并运行 `toUnlock.bat`，即可根据脚本提示完成自动化流程。
+Users only need to fully extract the package on Windows, connect their device, and run `toUnlock.bat`; follow the script prompts to complete the automated flow.
 
-> 如需帮助或交流，欢迎加入频道：  
+> For help or discussion, join the channel:  
 > **https://t.me/Kernix_dev**
 
 ---
 
-## ✨ 核心特性
+## ✨ Key Features
 
-- **Windows 一键运行**  
-  直接运行 `toUnlock.bat` 即可进入自动化流程。
+- **One-click Windows run**  
+  Run `toUnlock.bat` to start the automated workflow.
 
-- **面向 Snapdragon 8s Gen 4 平台**  
-  针对新一代 8s Gen 4 平台小米设备进行适配。
+- **Targeting Snapdragon 8s Gen 4 platform**  
+  Adapted specifically for Xiaomi devices on the new 8s Gen 4 platform.
 
-- **多机型精准匹配**  
-  脚本会根据选择的机型调用对应目录资源。
+- **Multi-model precise matching**  
+  The script selects model-specific resources from the corresponding directories.
 
-- **内置 ADB / Fastboot**  
-  无需单独配置 Android Platform Tools，解压即可使用。
+- **Built-in ADB / Fastboot**  
+  No need to separately install Android Platform Tools — just extract and use.
 
-- **BL 状态检测**  
-  提供 `check-unlock.bat`，用于检测 BL 锁与工程 ABL 状态。
+- **BL status detection**  
+  Includes `check-unlock.bat` to check bootloader lock and engineering ABL status.
 
-- **调试工具集成**  
-  提供 `adb-tool.bat`，方便执行 ADB / Fastboot 调试命令。
+- **Integrated debug tools**  
+  Includes `adb-tool.bat` for convenient ADB / Fastboot debugging commands.
 
-- **轻量化资源包**  
-  集成必要 ABL / GPT 资源，减少冗余文件体积。
+- **Lightweight resource package**  
+  Bundles only necessary ABL / GPT resources to reduce unnecessary file size.
 
 ---
 
-## 📱 已支持机型
+## 📱 Supported Models
 
-当前已适配以下 **3 款 Snapdragon 8s Gen 4 平台设备**：
+The following three Snapdragon 8s Gen 4 devices are currently supported:
 
-### Redmi 系列
+### Redmi series
 
 - **Redmi Turbo 4 Pro**
 
-### Xiaomi 系列
+### Xiaomi series
 
 - **Xiaomi Civi 5 Pro**
 
-### Tablet 平板系列
+### Tablet series
 
 - **Xiaomi Pad 8**
 
 ---
 
-## 🧩 系统要求
+## 🧩 System Requirements
 
-使用前请确认设备符合以下条件。
+Please confirm your device meets the following requirements before use.
 
-| 项目 | 要求 |
+| Item | Requirement |
 |---|---|
-| 电脑系统 | Windows 10 / Windows 11 |
-| 手机系统 | HyperOS 2.0 及以上 |
-| 设备平台 | Snapdragon 8s Gen 4 |
-| 连接方式 | USB 数据线 |
-| 调试状态 | USB 调试已开启 |
+| PC OS | Windows 10 / Windows 11 |
+| Phone OS | HyperOS 2.0 or later |
+| Device platform | Snapdragon 8s Gen 4 |
+| Connection | USB data cable |
+| Debug status | USB debugging enabled |
 
 ---
 
-## ⚠️ 兼容性说明
+## ⚠️ Compatibility Notes
 
-### 系统版本
+### System Version
 
-支持：
-
-```text
-HyperOS 2.0 及以上
-```
-
-不支持：
+Supported:
 
 ```text
-HyperOS 1.0 及更早版本
+HyperOS 2.0 and above
 ```
 
-HyperOS 1.0 及更早版本缺少相关底层服务组件，因此本工具流程无法在旧版本系统上正常生效。
+Not supported:
+
+```text
+HyperOS 1.0 and earlier
+```
+
+HyperOS 1.0 and earlier lack necessary low-level system components, so this tool's flow will not work correctly on those older versions.
 
 ---
 
-## 📦 Release 包结构
+## 📦 Release Package Structure
 
 ```text
 Mi8sg4-unlock-windows-auto.zip
@@ -145,85 +145,85 @@ Mi8sg4-unlock-windows-auto.zip
 
 ---
 
-## 📁 主要文件说明
+## 📁 Main File Descriptions
 
-| 文件 / 目录 | 说明 |
+| File / Directory | Description |
 |---|---|
-| `toUnlock.bat` | 一键启动入口 |
-| `8sg4-unlock.bat` | 主解锁流程脚本 |
-| `check-unlock.bat` | BL 锁 / 工程 ABL 状态检测脚本 |
-| `adb-tool.bat` | ADB / Fastboot 调试工具 |
-| `8735-Ennea.img` | 解锁流程相关镜像 |
-| `adb.exe` | ADB 工具 |
-| `fastboot.exe` | Fastboot 工具 |
-| `AdbWinApi.dll` | Windows ADB 运行库 |
-| `AdbWinUsbApi.dll` | Windows ADB USB 运行库 |
-| `unlockFolder/factoryImages/` | 各机型 ABL / GPT 资源 |
-| `unlockFolder/unlockGPT/` | 解锁 GPT 相关资源 |
+| `toUnlock.bat` | One-click entry script |
+| `8sg4-unlock.bat` | Main unlock process script |
+| `check-unlock.bat` | Script to check BL lock / engineering ABL status |
+| `adb-tool.bat` | ADB / Fastboot debugging tool |
+| `8735-Ennea.img` | Image used in the unlock flow |
+| `adb.exe` | ADB tool |
+| `fastboot.exe` | Fastboot tool |
+| `AdbWinApi.dll` | Windows ADB runtime library |
+| `AdbWinUsbApi.dll` | Windows ADB USB runtime library |
+| `unlockFolder/factoryImages/` | ABL / GPT resources per model |
+| `unlockFolder/unlockGPT/` | GPT unlock resources |
 
 ---
 
-## 🚀 使用方法
+## 🚀 How to Use
 
-### 1. 下载工具包
+### 1. Download the package
 
-前往 **Releases** 页面下载最新版本：
+Download the latest version from the Releases page:
 
 ```text
 Mi8sg4-unlock-windows-auto.zip
 ```
 
-### 2. 解压文件
+### 2. Extract the files
 
-请完整解压到本地目录。
+Fully extract to a local directory.
 
-推荐使用英文路径，例如：
+It is recommended to use an English path, for example:
 
 ```text
 C:\Mi8sG4-Unlocker\
 ```
 
-请勿直接在压缩包内运行脚本。
+Do not run scripts directly from inside the ZIP archive.
 
-### 3. 开启 USB 调试
+### 3. Enable USB debugging
 
-手机端开启：
+On the phone:
 
 ```text
-设置 → 关于手机 → 连续点击版本号开启开发者选项
-设置 → 更多设置 → 开发者选项 → USB 调试
+Settings → About phone → tap the build number repeatedly to enable Developer options
+Settings → More settings → Developer options → USB debugging
 ```
 
-连接电脑后，请在手机弹窗中允许 USB 调试授权。
+After connecting to the PC, allow the USB debugging authorization prompt on the phone.
 
-### 4. 启动解锁流程
+### 4. Start the unlock process
 
-双击运行：
+Double-click to run:
 
 ```text
 toUnlock.bat
 ```
 
-根据脚本提示选择对应机型并继续操作。
+Choose the corresponding model when prompted by the script and continue.
 
-### 5. 检查解锁状态
+### 5. Check unlock status
 
-解锁流程完成后，可运行：
+After the unlock process completes, you can run:
 
 ```text
 check-unlock.bat
 ```
 
-该脚本会检测：
+This script checks:
 
-- BL 锁状态
-- 工程 ABL 状态
-- 当前设备连接状态
-- 可能的异常情况
+- Bootloader (BL) lock status
+- Engineering ABL status
+- Current device connection status
+- Possible exceptions or errors
 
-### 6. Debug / 调试
+### 6. Debugging / Manual commands
 
-如需手动执行 ADB / Fastboot 命令，可运行：
+If you need to run ADB / Fastboot commands manually, run:
 
 ```text
 adb-tool.bat
@@ -231,48 +231,48 @@ adb-tool.bat
 
 ---
 
-## ⚠️ 注意事项
+## ⚠️ Important Notes
 
-- 解锁 BL 会清除所有用户数据，请务必提前备份。
-- 请使用原装或质量稳定的数据线。
-- 建议连接电脑后置 USB 2.0 接口。
-- 请完整解压工具包后再运行脚本。
-- 请勿删除、移动或重命名工具包内的文件。
-- 不建议在虚拟机、远程桌面或不稳定 USB 环境中运行。
-- 若设备无法识别，请检查 USB 调试授权、驱动和数据线。
-- 不保证所有系统版本、区域版本或设备状态均可正常使用。
+- Unlocking the bootloader will erase all user data — be sure to back up beforehand.
+- Use the original or a reliable quality data cable.
+- It is recommended to connect to a USB 2.0 port on the computer.
+- Fully extract the package before running scripts.
+- Do not delete, move, or rename files inside the package.
+- Not recommended to run in virtual machines, remote desktop, or unstable USB environments.
+- If the device is not recognized, check USB debugging authorization, drivers, and the data cable.
+- There is no guarantee the tool will work for all system versions, region variants, or device states.
 
 ---
 
-## ❓ 常见问题
+## ❓ Frequently Asked Questions
 
-### Q：运行脚本后提示未识别设备怎么办？
+### Q: What if the device is not recognized after running the script?
 
-请检查：
+Check:
 
-- 是否已开启 USB 调试
-- 手机是否弹出 USB 调试授权窗口
-- 是否点击允许调试
-- 数据线是否支持数据传输
-- Windows 驱动是否正常
-- 是否被其他手机助手占用 ADB
-- 是否完整解压工具包
+- Whether USB debugging is enabled
+- Whether the phone showed a USB debugging authorization prompt
+- Whether you tapped Allow for debugging
+- Whether the data cable supports data transfer
+- Whether Windows drivers are installed correctly
+- Whether another phone management tool is occupying ADB
+- Whether the package was fully extracted
 
-### Q：HyperOS 1.0 可以使用吗？
+### Q: Can HyperOS 1.0 be used?
 
-不支持。  
-本工具要求 HyperOS 2.0 及以上系统环境。
+No.  
+This tool requires HyperOS 2.0 or later.
 
-### Q：解锁会清除数据吗？
+### Q: Will unlocking wipe data?
 
-会。  
-BL 解锁会清除用户数据，请务必提前备份。
+Yes.  
+BL unlock will erase user data — please back up first.
 
-### Q：为什么建议使用英文路径？
+### Q: Why is an English path recommended?
 
-部分批处理脚本和 ADB / Fastboot 工具在中文路径或特殊字符路径下可能出现异常。
+Some batch scripts and ADB / Fastboot tools may behave unexpectedly when run from Chinese or special-character paths.
 
-推荐路径：
+Recommended path:
 
 ```text
 C:\Mi8sG4-Unlocker\
@@ -280,35 +280,35 @@ C:\Mi8sG4-Unlocker\
 
 ---
 
-## 💬 反馈与交流
+## 💬 Feedback & Discussion
 
-如果你在支持机型上遇到以下问题：
+If you encounter any of the following issues on supported models:
 
-- 设备未识别
-- 脚本报错
-- 状态检测异常
-- 机型匹配错误
-- ADB / Fastboot 通讯异常
-- 流程中断或失败
+- Device not recognized
+- Script errors
+- Status check abnormal
+- Model matching errors
+- ADB / Fastboot communication issues
+- Process interrupted or failed
 
-请提交 **Issue**，并尽量附上：
+Please open an **Issue** and include as much of the following as possible:
 
-- 设备型号
-- 系统版本
-- 脚本截图
-- 报错内容
-- 执行到哪一步失败
-- 当前设备模式：系统 / Fastboot
+- Device model
+- System version
+- Screenshot of the script
+- Error messages
+- Which step failed
+- Current device mode: System / Fastboot
 
-也可以前往频道交流：
+You can also discuss in the channel:
 
 > **https://t.me/Kernix_dev**
 
 ---
 
-## 👥 贡献者名单
+## 👥 Contributors
 
-感谢来自 [@Littlenine](https://github.com/LittlenineEnnea) 的核心技术支持。
+Thanks to [@Littlenine](https://github.com/LittlenineEnnea) for core technical support.
 
 <table>
   <tr>
@@ -317,28 +317,28 @@ C:\Mi8sG4-Unlocker\
         <img src="https://github.com/LittlenineEnnea.png" width="100px;" alt="LittlenineEnnea"/><br />
         <sub><b>Littlenine</b></sub>
       </a><br />
-      <sub>💡 核心技术 / 💻 解锁 boot.img</sub>
+      <sub>💡 Core technology / 💻 Unlocking boot.img</sub>
     </td>
   </tr>
 </table>
 
 ---
 
-## ⚖️ 免责声明
+## ⚖️ Disclaimer
 
-本项目仅供技术交流、自有设备维护与授权测试使用。
+This project is provided for technical exchange, maintenance of personal devices, and authorized testing only.
 
-使用本工具可能导致：
+Using this tool may result in:
 
-- 用户数据清除
-- 设备异常
-- 系统无法启动
-- 保修状态变化
-- 需要重新刷机恢复
-- 其他不可预期问题
+- User data deletion
+- Device malfunction
+- System failure to boot
+- Warranty status changes
+- Need for reflashing to recover
+- Other unforeseen issues
 
-使用者应自行确认设备归属与使用授权，并自行承担全部风险。
+Users must ensure they own the device or have authorization to use it and accept full responsibility for any risks.
 
-开发者不对因使用本项目造成的设备故障、数据丢失、保修失效或其他直接 / 间接损失承担责任。
+The developer is not liable for device failures, data loss, warranty voiding, or other direct/indirect losses resulting from use of this project.
 
-请勿将本项目用于未授权设备、非法用途或任何侵犯他人权益的行为。
+Do not use this project on unauthorized devices, for illegal activities, or to infringe others' rights.
