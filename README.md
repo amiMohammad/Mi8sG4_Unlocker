@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://t.me/Kernix_dev">
-    <img src="https://img.shields.io/badge/Telegram-Kernix_dev-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  <a href="https://fb.com/being.as.hasib">
+    <img src="https://img.shields.io/badge/Facebook-Mohammad Hasib-26A5E4?style=for-the-badge&logo=Facebook&logoColor=blue" alt="Facebook">
   </a>
   <img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
   <img src="https://img.shields.io/badge/SoC-Snapdragon%208s%20Gen%204-red?style=for-the-badge" alt="Snapdragon 8s Gen 4">
@@ -18,14 +18,14 @@
 
 ## 📌 Project Overview
 
-**Mi8sG4-Unlocker** is a **Windows fully-automatic bootloader (BL) unlock assistant** for Xiaomi devices based on the **Snapdragon 8s Gen 4** platform.
+**Mi8sG4_BootLoader_Unlocker** is a **Windows fully-automatic bootloader (BL) unlock assistant** for Xiaomi devices based on the **Snapdragon 8s Gen 4** platform.
 
 This project provides an automated workflow via the `toUnlock.bat` script. It bundles an ADB / Fastboot environment, device-specific resources, status-checking tools, and debug entry points to complete the BL unlock process under HyperOS.
 
 Users only need to fully extract the package on Windows, connect their device, and run `toUnlock.bat`; follow the script prompts to complete the automated flow.
 
 > For help or discussion, join the channel:  
-> **https://t.me/Kernix_dev**
+> **https://fb.com/being.as.hasib**
 
 ---
 
@@ -109,7 +109,7 @@ HyperOS 1.0 and earlier lack necessary low-level system components, so this tool
 ## 📦 Release Package Structure
 
 ```text
-Mi8sg4-unlock-windows-auto.zip
+Mi8sG4_BootLoader_Unlocker.zip
 ├── 8735-Ennea.img
 ├── 8sg4-unlock.bat
 ├── toUnlock.bat
@@ -169,7 +169,7 @@ Mi8sg4-unlock-windows-auto.zip
 Download the latest version from the Releases page:
 
 ```text
-Mi8sg4_Unlocker.zip
+Mi8sG4_BootLoader_Unlocker.zip
 ```
 
 ### 2. Extract the files
@@ -179,7 +179,7 @@ Fully extract to a local directory.
 It is recommended to use an English path, for example:
 
 ```text
-C:\Mi8sG4-Unlocker\
+D:\Mi8sG4_Unlocker\
 ```
 
 Do not run scripts directly from inside the ZIP archive.
@@ -274,7 +274,7 @@ Some batch scripts and ADB / Fastboot tools may behave unexpectedly when run fro
 Recommended path:
 
 ```text
-C:\Mi8sG4-Unlocker\
+D:\Mi8sG4_Unlocker\
 ```
 
 ---
