@@ -119,7 +119,6 @@ Mi8sg4-unlock-windows-auto.zip
 ├── fastboot.exe
 ├── AdbWinApi.dll
 ├── AdbWinUsbApi.dll
-├── 赞助一下谢谢喵.png
 └── unlockFolder/
     ├── factoryImages/
     │   ├── Redmiturbo4pro/
@@ -170,7 +169,7 @@ Mi8sg4-unlock-windows-auto.zip
 Download the latest version from the Releases page:
 
 ```text
-Mi8sg4-unlock-windows-auto.zip
+Mi8sg4_Unlocker.zip
 ```
 
 ### 2. Extract the files
