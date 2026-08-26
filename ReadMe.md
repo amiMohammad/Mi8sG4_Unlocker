@@ -80,6 +80,7 @@ Please confirm your device meets the following requirements before use.
 |---|---|
 | PC OS | Windows 10 / Windows 11 |
 | Phone OS | HyperOS 2.0 or later |
+| Android Security Patch| January 2026 or older |
 | Device platform | Snapdragon 8s Gen 4 |
 | Connection | USB data cable |
 | Debug status | USB debugging enabled |
@@ -298,10 +299,6 @@ Please open an **Issue** and include as much of the following as possible:
 - Error messages
 - Which step failed
 - Current device mode: System / Fastboot
-
-You can also discuss in the channel:
-
-> **https://t.me/Kernix_dev**
 
 ---
 
