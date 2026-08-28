@@ -304,6 +304,22 @@ Please open an **Issue** and include as much of the following as possible:
 
 ## 👥 Contributors
 
+Thanks to [@Kernix](https://github.com/Linuxoid-cn) for scripts support.
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Linuxoid-cn">
+        <img src="https://github.com/Linuxoid-cn.png" width="100px;" alt="Kernix"/><br />
+        <sub><b>Littlenine</b></sub>
+      </a><br />
+      <sub>💡 Scripts / 💻 8sg4_Unlocker.bat</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
 Thanks to [@Littlenine](https://github.com/LittlenineEnnea) for core technical support.
 
 <table>
@@ -317,7 +333,6 @@ Thanks to [@Littlenine](https://github.com/LittlenineEnnea) for core technical s
     </td>
   </tr>
 </table>
-
 ---
 
 ## ⚖️ Disclaimer
