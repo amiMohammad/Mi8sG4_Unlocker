@@ -311,7 +311,7 @@ Thanks to [@Kernix](https://github.com/Linuxoid-cn) for scripts support.
     <td align="center">
       <a href="https://github.com/Linuxoid-cn">
         <img src="https://github.com/Linuxoid-cn.png" width="100px;" alt="Kernix"/><br />
-        <sub><b>Littlenine</b></sub>
+        <sub><b>Kernix</b></sub>
       </a><br />
       <sub>💡 Scripts / 💻 8sg4_Unlocker.bat</sub>
     </td>
